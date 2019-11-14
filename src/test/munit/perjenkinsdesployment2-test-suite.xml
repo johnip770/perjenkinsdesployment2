@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="perjenkinsdesployment2-test-suite.xml" />
+	<munit:test name="perjenkinsdesployment2-test-suite-perjenkinsdesployment2FlowTest" doc:id="aac067f3-932e-4db3-af67-bf91d43597ee" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to perjenkinsdesployment2Flow" doc:id="3b80baed-aeec-4902-9d2d-7d251fd03b11" name="perjenkinsdesployment2Flow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="8fb46533-b025-4d32-b552-80002699a8d4" actual="#[payload.message]" expected="Hello Wolrd2!"/>
+		</munit:validation>
+	</munit:test>
+
+
+</mule>
