@@ -26,19 +26,7 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.2.0</muleVersion>
-						<username>jpagadala-intermedia</username>
-						<password>Nehalpag1971</password>
-						<applicationName>perjenkinsdesployment-dev2</applicationName>
-						<environment>Sandbox</environment>
-						<workers>1</workers>
-						<workerType>MICRO</workerType>
-						<properties>
-							<http.port>8081</http.port>
-						</properties>
-					</cloudHubDeployment>
+				
 				</configuration>
 			</plugin>
 		<plugin>
