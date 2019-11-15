@@ -32,7 +32,7 @@
 						<username>jpagadala-intermedia</username>
 						<password>Nehalpag1971</password>
 						<applicationName>perjenkinsdesployment-dev2</applicationName>
-						<environment>sandbox</environment>
+						<environment>Sandbox</environment>
 						<workers>1</workers>
 						<workerType>MICRO</workerType>
 						<properties>
