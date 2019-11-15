@@ -15,7 +15,7 @@
 
 		<app.runtime>4.2.0</app.runtime>
 		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
-	<munit.version>2.2.1</munit.version>
+		<munit.version>2.2.1</munit.version>
     </properties>
 
 	<build>
@@ -27,16 +27,16 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.2.0</muleVersion>
-						<username>jpagadala-intermedia</username>
-						<password>Nehalpag1971</password>
-						<applicationName>perjenkinsdesployment-dev2</applicationName>
-						<environment>Sandbox</environment>
-						<workers>1</workers>
-						<workerType>MICRO</workerType>
+						<uri>${anypoint.url}</uri>
+						<muleVersion>${muleversion}</muleVersion>
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password}</password>
+						<applicationName>${anypoint.applicationname}</applicationName>
+						<environment>${anypoint.environment}</environment>
+						<workers>${worker}</workers>
+						<workerType>${workertype}</workerType>
 						<properties>
-							<http.port>8081</http.port>
+							<http.port>${http.port}</http.port>
 						</properties>
 					</cloudHubDeployment>
 				</configuration>
