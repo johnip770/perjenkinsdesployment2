@@ -27,16 +27,16 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<uri>${anypoint.url}</uri>
+						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.2.0</muleVersion>
-						<username>${anypoint.username}</username>
-						<password>${anypoint.password}</password>
-						<applicationName>${anypoint.applicationname}</applicationName>
-						<environment>${anypoint.environment}</environment>
-						<workers>${worker}</workers>
-						<workerType>${workertype}</workerType>
+						<username>jpagadala-intermedia</username>
+						<password>Nehalpag1971</password>
+						<applicationName>perjenkinsdesployment-dev2</applicationName>
+						<environment>sandbox</environment>
+						<workers>1</workers>
+						<workerType>MICRO</workerType>
 						<properties>
-							<http.port>${http.port}</http.port>
+							<http.port>8081</http.port>
 						</properties>
 					</cloudHubDeployment>
 				</configuration>
